@@ -16,6 +16,8 @@ code {
 html {
     overflow: scroll;
     overflow-x: hidden;
+    height: 100vh;
+    min-height: 100%;
 }
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
@@ -39,6 +41,7 @@ body{
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-background-size: cover;
 }
 li {
     list-style: none;
