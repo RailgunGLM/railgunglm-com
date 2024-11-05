@@ -139,7 +139,7 @@ header {
     justify-content: center;
 }
 .dropdown_menu.open {
-    height: 230px;
+    height: auto;
 }
 .heading {
     padding: 250px 0 250px 0;
