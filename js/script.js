@@ -1,4 +1,4 @@
-﻿const toggle = document.querySelector('.navbar .toggle');
+const toggle = document.querySelector('.navbar .toggle');
 const dropDownMenu = document.querySelector('.dropdown_menu');
 const qlist = document.getElementById('qlist');
 const startBtn = document.querySelector('.start');
@@ -12,7 +12,7 @@ const totalScore = document.querySelector('.total-score');
 const endScreen = document.getElementById('end-screen');
 const restartBtn = document.querySelector('.restart');
 const subjectObject = {
-    "Information Processing": ["Introduction to Information Processing", "Data Organization and Data Control", "Number and Character Encoding System", "Multimedia Element and Digitization", "Spreadsheet", "Database"],
+    "Information Processing": ["Introduction to Information Processing", "Data Organization and Data Control", "Number and Character Encoding System", "Multimedia Elements and Digitization", "Spreadsheet", "Database"],
     "Computer System Fundamentals": ["Computer Hardware", "Input and Output Devices", "Computer Software"],
     // secondary storage devices -> include into system unit of computer -> name change to computer hardware
     "Internet and its Applications": ["The Networking and Internet Basics", "Internet Services and Applications", "Elementary Web Authoring", "Threats and Security on the Internet"],
@@ -125,6 +125,13 @@ const showScore = () => {
     endScreen.classList.remove("hide");
     finalScore.innerHTML = score;
     totalScore.innerHTML = '/' + questions.length.toString();
+    if (5 * score >= 4 * questions.length){
+        finalScore.classList.add("good-score");
+        totalScore.classList.add("good-score");
+    }else{
+        finalScore.classList.remove("good-score");
+        totalScore.classList.remove("good-score");
+    }
 };
 restartBtn.addEventListener("click", () => {
     window.location.reload();
