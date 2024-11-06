@@ -14,10 +14,8 @@ code {
     font-family: 'Courier New';
 }
 html {
-    overflow: scroll;
-    overflow-x: hidden;
-    height: 100vh;
-    min-height: 100%;
+    overflow: hidden;
+    height: 100%;
 }
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
@@ -33,16 +31,17 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     height: 100vh;
+    margin: 0;
     background-color: #000000;
     background-image: url('/asset/background.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    position: fixed;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 li {
     list-style: none;
