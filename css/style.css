@@ -14,8 +14,8 @@ code {
     font-family: 'Courier New';
 }
 html {
-    overflow: hidden;
-    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
@@ -31,17 +31,14 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-body {
+body{
     height: 100vh;
-    margin: 0;
     background-color: #000000;
     background-image: url('/asset/background.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 li {
     list-style: none;
@@ -142,7 +139,7 @@ header {
     justify-content: center;
 }
 .dropdown_menu.open {
-    height: auto;
+    height: 270px;
 }
 .heading {
     padding: 250px 0 250px 0;
@@ -194,14 +191,14 @@ header {
 }
 .card h1{
     font-family: 'GD-MadoMaruGoJA';
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: white;
     word-wrap: break-word;
     margin-bottom: 15px;
 }
 .card h1 a {
     font-family: 'GD-MadoMaruGoJA';
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: white;
     word-wrap: break-word;
 }
@@ -494,6 +491,9 @@ header {
 #end-screen .score-text {
     color: #a2aace;
     font-size: 16px;
+}
+#end-screen .good-score{
+    color: #ff66ff;
 }
 select {
     font-family: 'Merriweather';
