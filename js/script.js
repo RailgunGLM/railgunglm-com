@@ -4,6 +4,7 @@ const qlist = document.getElementById('qlist');
 const startBtn = document.querySelector('.start');
 const module = document.getElementById('module');
 const topic = document.getElementById('topic');
+const qno = document.getElementById('qno');
 const qWrapper = document.getElementById('question-wrapper');
 const settings = document.getElementById('settings');
 const nxtBtn = document.querySelector('.next');
@@ -25,14 +26,40 @@ window.onload = function () {
         module.options[module.options.length] = new Option(x, x);
     }
     module.onchange = function () {
+        qno.length = 1;
         topic.length = 1;
         var y = subjectObject[this.value];
         for (var i = 0; i < y.length; i++) {
             topic.options[topic.options.length] = new Option(y[i], y[i]);
         }
+        if (module.value != 'Select module' && topic.value != 'Select topic' && qno.value != 'Select number of questions') {
+            startBtn.disabled = false;
+        } else {
+            startBtn.disabled = true;
+        }
     }
     topic.onchange = function () {
-        if (topic.value != 'Select topic') {
+        qno.length = 1;
+        fetch('/data/questions.json')
+        .then(response => response.json())
+        .then(data => {
+            questions = data;
+            questions = questions.filter(item => item.topic == topic.value);
+            for (var i = 1; i <= questions.length; i++) {
+                qno.options[i] = new Option(i, i);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching questions.json: ', error);
+        });
+        if (module.value != 'Select module' && topic.value != 'Select topic' && qno.value != 'Select number of questions') {
+            startBtn.disabled = false;
+        } else {
+            startBtn.disabled = true;
+        }
+    }
+    qno.onchange = function () {
+        if (module.value != 'Select module' && topic.value != 'Select topic' && qno.value != 'Select number of questions') {
             startBtn.disabled = false;
         } else {
             startBtn.disabled = true;
@@ -50,12 +77,27 @@ const startQuiz = () => {
         .then(response => response.json())
         .then(data => {
             questions = data;
+            if (module.value == 'Select module'){
+                alert ('Error: module not selected');
+                return;
+            }
+            if (topic.value == 'Select topic'){
+                alert ('Error: topic not selected');
+                return;
+            }
+            if (qno.value == 'Select number of questions'){
+                alert ('Error: number of questions not selected');
+                return;
+            }
             settings.classList.add("hide");
             qWrapper.classList.remove("hide");
             questions = questions.filter(item => item.topic == topic.value);
             for (let i = questions.length - 1; i > 0; i--) {
                 let j = Math.floor(Math.random() * (i + 1));
                 [questions[i], questions[j]] = [questions[j], questions[i]];
+            }
+            while (questions.length > parseInt(qno.value)) {
+                questions.pop();
             }
             current = 1;
             showQuestion(questions[0]);
@@ -92,19 +134,26 @@ const showQuestion = (question) => {
                 if (document.querySelector('input[name="answer"]:checked').value == question.correct_answer.toString()) {
                     score++;
                     answer.classList.add('correct');
+                    var btns = document.getElementsByName('answer');
+                    for (let i = 0; i < btns.length; i++) {
+                        btns[i].disabled = true;
+                    }
+                    answered = true;
+                    nxtBtn.disabled = false;
+                    nextQuestion();
                 } else {
                     answer.classList.add('incorrect');
                     answersDiv.forEach((answer) => {
                         if(cnt1 == ans) answer.classList.add('correct');
                         cnt1++;
                     });
+                    var btns = document.getElementsByName('answer');
+                    for (let i = 0; i < btns.length; i++) {
+                        btns[i].disabled = true;
+                    }
+                    answered = true;
+                    nxtBtn.disabled = false;
                 }
-                var btns = document.getElementsByName('answer');
-                for (let i = 0; i < btns.length; i++) {
-                    btns[i].disabled = true;
-                }
-                answered = true;
-                nxtBtn.disabled = false;
             }
         });
     });
