@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% load static %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homulilly's Website</title>
-    <link rel="stylesheet" href="/static/css/style.css" asp-append-version="true" />
-    <link rel="icon" type="image/x-icon" href="/static/data/coin.ico">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" asp-append-version="true" />
+    <link rel="icon" type="image/x-icon" href="{% static '/data/coin.ico' %}">
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 </head>
 <body>
@@ -47,7 +48,7 @@
         <div class="right_column">
             <div class="card">
                 <h1 style="text-align: center;"><a href="/bio.html">ABOUT ME</a></h1>
-                <div class="profile"><img src="/static/data/profile.png"></div>
+                <div class="profile"><img src="{% static '/data/profile.png' %}"></div>
                 <h3 style="text-align: center;">No game, No life</h3>
                 <div class="icon" style="text-align: center; margin-top: 10px;">
                     <a href="https://github.com/RailgunGLM"><iconify-icon icon="mdi:github"></iconify-icon></a>
@@ -57,6 +58,6 @@
             </div>
         </div>
     </div>
-    <script src="/static/js/script.js"></script>
+    <script src="{% static '/js/script.js' %}"></script>
 </body>
 </html>
