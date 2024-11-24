@@ -1,12 +1,12 @@
 @font-face{
     font-family: 'GD-MadoMaruGoJA';
-    src: url('../staticfiles/data/GD-MadoMaruGoJA-Rev001.otf') format('opentype');
+    src: url('/static/data/GD-MadoMaruGoJA-Rev001.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Merriweather';
-    src: url('../staticfiles/data/Merriweather-Regular.ttf') format('opentype');
+    src: url('/static/data/Merriweather-Regular.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -34,7 +34,7 @@ html {
 body{
     height: 100vh;
     background-color: #000000;
-    background-image: url('../staticfiles/data/background.jpg');
+    background-image: url('/static/data/background.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
