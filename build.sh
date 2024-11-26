@@ -7,6 +7,7 @@ python3.12 pip install -U pip
 # Install dependencies
 
 echo "Installing project dependencies..."
+pip install mysqlclient
 python3.12 -m pip install -r requirements.txt
 
 # Make migrations
