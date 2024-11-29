@@ -1,4 +1,4 @@
-# railgunglm-com
+# railgunglm.com
 
 # Todo list
 | Idea | Description |
