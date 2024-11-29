@@ -180,7 +180,7 @@ header {
 .card {
     font-family: 'Merriweather';
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(30px);
     border-radius: 10px;
     padding: 1.5rem;
     margin-top: 20px;
