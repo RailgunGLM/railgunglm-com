@@ -1,6 +1,6 @@
 # railgunglm-com
 
-# Todo list: 
+# Todo list
 | Idea | Description |
 | ----- | ----- |
 | Statistic | Show the performance of overall students in different topic (no. of correct in each problem) |
