@@ -34,7 +34,6 @@ html {
 body{
     height: 100vh;
     background-color: #000000;
-    background-image: url('/asset/background.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
