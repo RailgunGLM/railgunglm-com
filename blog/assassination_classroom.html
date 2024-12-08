@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Homulilly's Website</title>
+    <link rel="stylesheet" href="/css/style.css" asp-append-version="true" />
+    <link rel="icon" type="image/x-icon" href="/data/sensei.png">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body style="background-image: url('/asset/background6.webp');">
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="/index.html">HOMULILLY</a></div>
+            <ul class="links">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/bio.html">BIO</a></li>
+                <li><a href="/blog.html">BLOG</a></li>
+                <li><a href="/project.html">PROJECT</a></li>
+            </ul>
+            <input id="checkbox" type="checkbox">
+            <label class="toggle" for="checkbox">
+                <div id="bar1" class="bars"></div>
+                <div id="bar2" class="bars"></div>
+                <div id="bar3" class="bars"></div>
+            </label>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/bio.html">BIO</a></li>
+            <li><a href="/blog.html">BLOG</a></li>
+            <li><a href="/project.html">PROJECT</a></li>
+        </div>
+    </header>
+    <div class="heading">BLOG</div>
+    <div class="row">
+        <div class="left_column">
+            <div class="card">
+                <p>
+                    This is a math problem from the anime Assassination Classroom Season 2 Episode 12, 
+                    which is supposed to be the last question in the math exam. <br> <br>
+                </p>
+                <img src="/data/mathproblem.webp">
+                <div class="card">
+                    Translated and simplified version: <br> <br>
+                    Given a cube with size length of \(a\). Denote the domain \(D\) as the set of all points in the cube that is closer 
+                    to the center of the cube than to any of its vertices. Find the volume of \(D\). <br> <br>
+
+                    The following is an illustration of \(D\): 
+                    <img src="/data/solid.png">
+                </div>
+                <p>
+                    The anime gives us two directions for finding the solution, brute force by Asano and observation-based by Karma. <br> <br>
+                    Asano's brute force solution: 
+                </p>
+                <div class="card">
+                    <img src="/data/solid1.png"> <br>
+                    By observation, \(D\) should be composed by 8 of these smaller solids. <br>
+                    Using Pythagoras theorem, we have \(s = \sqrt{2 \times (a / 4)^2} = a / \sqrt{8} \) <br> <br>
+                    We can further separate the solid into \(3\) tetrahedrons (dark grey) and a right hexagonal pyramid (light grey). <br>
+                    Volume of 3 tetrahedrons \(= (a / 4)^2 / 2 \times (a / 2) / 3 \times 3 = a^3 / 64\) <br>
+                    Base area of pyramid = \(3\sqrt{3}s^2/2 = 3\sqrt{3}a^2/16\) <br>
+                    height of pyramid = half of the distance between center and vertex = \(\sqrt{3 \times (a / 2)^2} / 2 = \sqrt{3}a / 4\) <br>
+                    Volume of pyramid = \((3\sqrt{3}a^2/16 \times \sqrt{3}a/4) / 3 = 3a^3/64\) <br>
+                    Volume of solid = \(a^3 / 64 + 3a^3/64 = a^3/16\) <br> <br>
+                    Finally, we have volume of \(D\) = \(8 \times a^3/16 = a^3/2\) <br> \(\blacksquare\)
+                </div>
+                <p>
+                    Brute force solution looks very rigorous though... Let's take a look of Karma's obserbation-based (power of friendship) solution: <br>
+                </p>
+                <div class="card">
+                    By observation, \(D\) should be composed by 8 smaller solids (the same ones above). <br>
+                    Notice that switching the position of the center and the vertex does not change the answer. <br> <br>
+                    Using this symmetric property, we can deduce that the volume of the solid is half the volume of the cube. <br>
+                    Thus, we can further duduce that the volume of \(D\) is half the volume of the cube, which is \(a^3/2\). <br> \(\blacksquare\)
+                </div>
+                <p>
+                    Overall, there is nothing wrong using a valid brute force geometric construction for this problem, 
+                    but a solution using symmetry could be a lot cleaner and simpler. 
+                </p>
+            </div>
+        </div>
+        <div class="right_column">
+            <div class="card">
+                <h1 style="text-align: center;"><a href="/bio.html">ABOUT ME</a></h1>
+                <div class="profile"><img src="/data/profile.png"></div>
+                <h3 style="text-align: center;">We are killers, and our target is our teacher</h3>
+                <div class="icon" style="text-align: center; margin-top: 10px;">
+                    <a href="https://github.com/RailgunGLM"><iconify-icon icon="mdi:github"></iconify-icon></a>
+                    <a href="https://codeforces.com/profile/Homulilly"><iconify-icon icon="simple-icons:codeforces"></iconify-icon></a>
+                    <a href="https://leetcode.com/u/Homulilly/"><iconify-icon icon="simple-icons:leetcode"></iconify-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
