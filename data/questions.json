@@ -551,7 +551,7 @@
   },
   {
     "topic": "Database",
-    "question": "The table <code>TABLE</code> has four records, as shown below. <br> <img src='/data/201514.webp'> <br> What is the output of the following SQL command? <br> <code> SELECT ID FROM TABLE WHERE NAME < 'CHRISTINE' AND SCORE > 70</code>",
+    "question": "The table <code>TABLE</code> has four records, as shown below. <br> <img src='/data/201514.webp'> <br> What is the output of the following SQL command? <br> <code> SELECT ID FROM TABLE WHERE NAME < 'Carlos' AND SCORE > 70</code>",
     "correct_answer": "B",
     "incorrect_answers": [
       "A",
