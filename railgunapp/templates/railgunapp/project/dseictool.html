@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homulilly's Website</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" asp-append-version="true" />
+    <link rel="icon" type="image/x-icon" href="{% static 'data/ngnl.png' %}">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: url('https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734367949/railgunglm/asset/tkefcdawo5ytnw7k0ycr.webp');">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="{% url 'index' %}">HOMULILLY</a></div>
+            <ul class="links">
+                <li><a href="{% url 'index' %}">HOME</a></li>
+                <li><a href="{% url 'bio' %}">BIO</a></li>
+                <li><a href="{% url 'blog' %}">BLOG</a></li>
+                <li><a href="{% url 'project' %}">PROJECT</a></li>
+            </ul>
+            <input id="checkbox" type="checkbox">
+            <label class="toggle" for="checkbox">
+                <div id="bar1" class="bars"></div>
+                <div id="bar2" class="bars"></div>
+                <div id="bar3" class="bars"></div>
+            </label>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="{% url 'index' %}">HOME</a></li>
+            <li><a href="{% url 'bio' %}">BIO</a></li>
+            <li><a href="{% url 'blog' %}">BLOG</a></li>
+            <li><a href="{% url 'project' %}">PROJECT</a></li>
+        </div>
+    </header>
+    <div class="row">
+        <div class="q_column" id="qlist">
+            <div class="card" id="settings">
+                <form action="#" method="POST" id="settings-form">
+                    {% csrf_token %}
+                    <h1>DSE ICTOOL</h1>
+                    <label for="module">Module: </label>
+                    <select id="module">
+                        <option value="Select module">Select module</option>
+                    </select>
+                    <label for="topic">Topic: </label>
+                    <select id="topic">
+                        <option value="Select topic">Select topic</option>
+                    </select>
+                    <label for="qno">Number of questions: </label>
+                    <select id="qno">
+                        <option value="Select number of questions">Select number of questions</option>
+                    </select>
+                    <div class="btn"><button class="start" value="start" type="submit" disabled><span class="text">Start</span></button></div>
+                    <p>
+                        This button has been pushed for {{freq}} times, just let you know!
+                    </p>
+                </form>
+            </div>
+            <div class="card hide" id="question-wrapper">
+                <form action="#" method="POST" id="answer-form">
+                    {% csrf_token %}
+                    <div class="number"></div>
+                    <div class="question"></div>
+                    <div class="answer-wrapper"></div>
+                </form>
+                <div class="btn"><button class="next"><span class="text">Next</span></button></div>
+            </div>
+            <div class="card hide" id="end-screen">
+                <div class="score">
+                    <h1>FINAL SCORE</h1>
+                    <div class="score-text">Your score is: </div>
+                    <span class="final-score">0</span><span class="total-score">/10</span>
+                </div>
+                <div class="btn"><button class="restart"><span class="text">Restart</span></button></div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+        $(document).on('submit', '#settings-form', function (e) {
+            e.preventDefault();
+            const buttonValue = $(this).find('button[type="submit"]').val();
+            $.ajax({
+                type: 'POST',
+                url: "{% url 'dseictool' %}",
+                data: {
+                    module: $('#module').val(),
+                    topic: $('#topic').val(),
+                    qno: $('#qno').val(),
+                    csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
+                    button: buttonValue
+                },
+                success: function(response) {
+                    console.log('Success:', response);
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).on('change', 'input[name="answer"]', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: "{% url 'dseictool' %}",
+                data: {
+                    question: $('.question').html(),
+                    answer: $(this).val(),
+                    csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
+                },
+                success: function (response) {
+                    console.log('Success:', response);
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+<!--
+                    <label class="check">
+                    <input type="checkbox" style="display: none;">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>
+                <label class="check">
+                    <input type="checkbox" style="display: none;">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label>
+                -->
+                <!--<svg width="20px" height="20px" viewBox="0 0 20 20"><path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path><polyline points="1 9 7 14 15 4"></polyline></svg>-->
