@@ -5,12 +5,11 @@
     <title>Homulilly's Website</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}" asp-append-version="true" />
-    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381545/railgunglm/data/tsediyzfmaslqp1op9s0.png">
+    <link id="favicon" rel="icon" type="image/x-icon" href="">
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-<body style="background-image: url('https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734367949/railgunglm/asset/zec3fzwnkhqxtlteuxmi.webp');">
-<body>
+<body onload="favicon()" background="{{post.background}}">
     <header>
         <div class="navbar">
             <div class="logo"><a href="{% url 'index' %}">HOMULILLY</a></div>
@@ -45,7 +44,7 @@
             <div class="card">
                 <h1 style="text-align: center;"><a href="{% url 'bio' %}">ABOUT ME</a></h1>
                 <div class="profile"><img src="{% static 'data/profile.png' %}"></div>
-                <h3 style="text-align: center;">We are killers, and our target is our teacher</h3>
+                <h3 style="text-align: center;">{{post.slogan}}</h3>
                 <div class="icon" style="text-align: center; margin-top: 10px;">
                     <a href="https://github.com/RailgunGLM"><iconify-icon icon="mdi:github"></iconify-icon></a>
                     <a href="https://codeforces.com/profile/Homulilly"><iconify-icon icon="simple-icons:codeforces"></iconify-icon></a>
@@ -54,5 +53,11 @@
             </div>
         </div>
     </div>
+    <script>
+        function favicon(){
+            const favicon = document.getElementById("favicon");
+            favicon.setAttribute("href", "{{post.image}}");
+        }
+    </script>
 </body>
 </html>
