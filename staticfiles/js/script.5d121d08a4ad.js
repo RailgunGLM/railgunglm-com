@@ -40,7 +40,7 @@ window.onload = function () {
     }
     topic.onchange = function () {
         qno.length = 1;
-        fetch('https://res.cloudinary.com/dxhkoqh3v/raw/upload/v1734381545/railgunglm/data/bmcdivc7ctdan3hj0mwd.json')
+        fetch('https://res.cloudinary.com/dxhkoqh3v/raw/upload/v1735769868/railgunglm/data/questions.json')
         .then(response => response.json())
         .then(data => {
             questions = data;
@@ -73,7 +73,7 @@ toggle.onclick = function () {
     dropDownMenu.classList.toggle('open');
 }
 const startQuiz = () => {
-    fetch('https://res.cloudinary.com/dxhkoqh3v/raw/upload/v1734381545/railgunglm/data/bmcdivc7ctdan3hj0mwd.json')
+    fetch('https://res.cloudinary.com/dxhkoqh3v/raw/upload/v1735769868/railgunglm/data/questions.json')
         .then(response => response.json())
         .then(data => {
             questions = data;

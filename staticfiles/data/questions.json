@@ -121,7 +121,7 @@
   },
   {
     "topic": "Data Organization and Data Control",
-    "question": "When creating an online email account, it is asked to enter the password twice. <br> <img src='/data/201707.webp'> <br> What is the purpose of re-entering the password?",
+    "question": "When creating an online email account, it is asked to enter the password twice. <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381534/railgunglm/data/stojbfncjnoojoaibjgb.webp'> <br> What is the purpose of re-entering the password?",
     "correct_answer": "Data verification",
     "incorrect_answers": [
       "Data collection",
@@ -161,7 +161,7 @@
   },
   {
     "topic": "Number and Character Encoding System",
-    "question": "Seven segment display consists of 7 separate LEDs. Each LED can be set to either 'ON' or 'OFF'. A pattern can be displayed by turning some or none of the LEDs on. <br> <img src='/data/201306.webp'> <br> How many different patterns can it display?",
+    "question": "Seven segment display consists of 7 separate LEDs. Each LED can be set to either 'ON' or 'OFF'. A pattern can be displayed by turning some or none of the LEDs on. <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381527/railgunglm/data/xrzaxlhgvatgg2dsqcm2.webp'> <br> How many different patterns can it display?",
     "correct_answer": "128",
     "incorrect_answers": [
       "7",
@@ -351,7 +351,7 @@
   },
   {
     "topic": "Spreadsheet",
-    "question": "What fomatting feature is used in the spreadsheet below? <br> <img src='/data/201207.webp'>",
+    "question": "What fomatting feature is used in the spreadsheet below? <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381527/railgunglm/data/pb8ypjk3i8wuy4v1jqtc.webp'>",
     "correct_answer": "Wrap text",
     "incorrect_answers": [
       "Merge cells",
@@ -382,16 +382,16 @@
   {
     "topic": "Spreadsheet",
     "question": "Chris wants to create a chart to display the number of programmers in different age groups. Which type of chart is most appropriate?",
-    "correct_answer": "<img src='/data/201407_1.webp'>",
+    "correct_answer": "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381529/railgunglm/data/lemiillvo8hyqnzk9dus.webp'>",
     "incorrect_answers": [
-      "<img src='/data/201407_2.webp'>",
-      "<img src='/data/201407_3.webp'>",
-      "<img src='/data/201407_4.webp'>"
+      "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381529/railgunglm/data/bbj9ebgorqv2sb7xoj4q.webp'>",
+      "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381530/railgunglm/data/dzmbvr3mnxt9uaosqb1n.webp'>",
+      "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381530/railgunglm/data/sbdb7dv563yyvqwjjvrq.webp'>"
     ]
   },
   {
     "topic": "Spreadsheet",
-    "question": "Consider the spreadsheet below. <br> <br> <img src='/data/201510.webp'> <br> <br> What is the output value of the following formula? <br> <code>=COUNTIF(A2:A7,A3)</code>",
+    "question": "Consider the spreadsheet below. <br> <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381531/railgunglm/data/cf2wpyupbwholef5lauh.webp'> <br> <br> What is the output value of the following formula? <br> <code>=COUNTIF(A2:A7,A3)</code>",
     "correct_answer": "2",
     "incorrect_answers": [
       "1",
@@ -551,7 +551,7 @@
   },
   {
     "topic": "Database",
-    "question": "The table <code>TABLE</code> has four records, as shown below. <br> <img src='/data/201514.webp'> <br> What is the output of the following SQL command? <br> <code> SELECT ID FROM TABLE WHERE NAME < 'CHRISTINE' AND SCORE > 70</code>",
+    "question": "The table <code>TABLE</code> has four records, as shown below. <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381531/railgunglm/data/koxpimsc9eqjelps9sj2.webp'> <br> What is the output of the following SQL command? <br> <code> SELECT ID FROM TABLE WHERE NAME < 'CHRISTINE' AND SCORE > 70</code>",
     "correct_answer": "B",
     "incorrect_answers": [
       "A",
@@ -791,7 +791,7 @@
   },
   {
     "topic": "Input and Output Devices",
-    "question": "The following QR code is printed on an leaflet so readers can scan the code and browse the information online using smart phone. What information is encoded in the QR code? <br> <img src='/data/201414.webp'>",
+    "question": "The following QR code is printed on an leaflet so readers can scan the code and browse the information online using smart phone. What information is encoded in the QR code? <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381531/railgunglm/data/rfwsazoe4dw8lumre2e8.webp'>",
     "correct_answer": "URL",
     "incorrect_answers": [
       "Text information about the leaflet",
@@ -821,12 +821,12 @@
   },
   {
     "topic": "Input and Output Devices",
-    "question": "In a convenient store, the original barcode of a product is shown below. <br> <img src='/data/201518.webp'> <br> Part of the barcode of the product is modified. Which of the following CANNOT be properly scanned?",
-    "correct_answer": "<img src='/data/201518_1.webp'>",
+    "question": "In a convenient store, the original barcode of a product is shown below. <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381532/railgunglm/data/qs1hefsundi5qhtzz8gn.webp'> <br> Part of the barcode of the product is modified. Which of the following CANNOT be properly scanned?",
+    "correct_answer": "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381532/railgunglm/data/zihdg3bqopsuebuyctmk.webp'>",
     "incorrect_answers": [
-      "<img src='/data/201518_2.webp'>",
-      "<img src='/data/201518_3.webp'>",
-      "<img src='/data/201518_4.webp'>"
+      "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381533/railgunglm/data/xfpdu7lphuxmpgcniwni.webp'>",
+      "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381533/railgunglm/data/oyaagqnsaggxckypicqo.webp'>",
+      "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381533/railgunglm/data/zpbfifzj5sjefxgndqwg.webp'>"
     ]
   },
   {
@@ -901,7 +901,7 @@
   },
   {
     "topic": "Computer Software",
-    "question": "The following diagram shows a basic computer system. <br> <img src='/data/201320.webp'> <br> Which of the following does <b>K</b> not responsible for?",
+    "question": "The following diagram shows a basic computer system. <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381527/railgunglm/data/h69cjs93eihkoeseywqj.webp'> <br> Which of the following does <b>K</b> not responsible for?",
     "correct_answer": "Increases the number of application programs",
     "incorrect_answers": [
       "Controls devices through devices drivers",
@@ -1151,7 +1151,7 @@
   },
   {
     "topic": "The Networking and Internet Basics",
-    "question": "In the following diagram, X is a network connecting device that allows customers to order through cashiers using dedicated terminals. <br> <img src='/data/201328.webp'> <br> What is the function of X?",
+    "question": "In the following diagram, X is a network connecting device that allows customers to order through cashiers using dedicated terminals. <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381528/railgunglm/data/t9hsluhmqjr7jsrnkgs9.webp'> <br> What is the function of X?",
     "correct_answer": "To connect devices and help device communicate with another device",
     "incorrect_answers": [
       "To boost the signal transmitted between devices",
@@ -1221,7 +1221,7 @@
   },
   {
     "topic": "The Networking and Internet Basics",
-    "question": "Below is the computer network for Chris's home: <br> <img src='/data/201921.webp'> <br> What are X and Y?",
+    "question": "Below is the computer network for Chris's home: <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381535/railgunglm/data/mfcuo8fe6nydh6edzlds.webp'> <br> What are X and Y?",
     "correct_answer": "X: Switch, Y: Access point",
     "incorrect_answers": [
       "X: Access point, Y: Network interface card",
@@ -1241,7 +1241,7 @@
   },
   {
     "topic": "The Networking and Internet Basics",
-    "question": "<src img='/data/202020.webp'> <br> In order to allow all desktop computers to connect to the wireless printer, which of the following actions should be taken?",
+    "question": "<src img='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381535/railgunglm/data/cyozpbunctcm0sy5atp0.webp'> <br> In order to allow all desktop computers to connect to the wireless printer, which of the following actions should be taken?",
     "correct_answer": "The wireless printer should be connected to the AP",
     "incorrect_answers": [
       "The AP should be installed between the switch and teacher's computer",
@@ -1501,7 +1501,7 @@
   },
   {
     "topic": "Elementary Web Authoring",
-    "question": "Chris creates a web page to show a photo, but the photo cannot be displayed in a web browser, as shown below. <br> <img src='/data/201325.webp'> <br> What is the possible mistake he has made?",
+    "question": "Chris creates a web page to show a photo, but the photo cannot be displayed in a web browser, as shown below. <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381528/railgunglm/data/citpxjarhmivqqrb9qky.webp'> <br> What is the possible mistake he has made?",
     "correct_answer": "Used an incorrect filename for the photo",
     "incorrect_answers": [
       "Adapoted improper text format",
@@ -1611,7 +1611,7 @@
   },
   {
     "topic": "Elementary Web Authoring",
-    "question": "A web page of a school displays all of its 16 subjects, as shown below. <br> <img src='/data/201727.webp'> <br> Which of the following modifications can let users to clearly view all the subjects without using the scroll bar on the right hand side?",
+    "question": "A web page of a school displays all of its 16 subjects, as shown below. <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381534/railgunglm/data/zv9dkijrsnsg1apsibcr.webp'> <br> Which of the following modifications can let users to clearly view all the subjects without using the scroll bar on the right hand side?",
     "correct_answer": "Uses a table with multiple columns",
     "incorrect_answers": [
       "Decreases the character spacing",
@@ -1621,7 +1621,7 @@
   },
   {
     "topic": "Elementary Web Authoring",
-    "question": "The following diagram is part of the folder structure of www.wyhk.edu.hk: <br> <img src='/data/201825.webp'> <br> Which of the following URLs is NOT valid?",
+    "question": "The following diagram is part of the folder structure of www.wyhk.edu.hk: <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381535/railgunglm/data/w1tbvtu5zy8qnb4tuuwa.webp'> <br> Which of the following URLs is NOT valid?",
     "correct_answer": "<code>http://www.wyhk.edu.hk/data/test.doc</code>",
     "incorrect_answers": [
       "<code>http://www.wyhk.edu.hk/index.html</code>",
@@ -1661,7 +1661,7 @@
   },
   {
     "topic": "Threats and Security on the Internet",
-    "question": "When Chris tries to change the password of his computer account, the following screen is shown. <br> <img src='/data/201336.webp'> <br> What is the use of 'Old password'?",
+    "question": "When Chris tries to change the password of his computer account, the following screen is shown. <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381528/railgunglm/data/shu4up396a4czvuaiylk.webp'> <br> What is the use of 'Old password'?",
     "correct_answer": "It prevents other people from changing the password",
     "incorrect_answers": [
       "It improves the password strength",
@@ -2111,7 +2111,7 @@
   },
   {
     "topic": "Spreadsheet",
-    "question": "Chris uses a spreadsheet to store records of books borrowed by students, as follows: <br> <img src='/data/202113.webp'> <br> He wants to create a pivot table to find the number of books borrowed by each student. <br> <img src='/data/202113_1.webp'> <br> In which of the following areas should 'Student ID' be put?",
+    "question": "Chris uses a spreadsheet to store records of books borrowed by students, as follows: <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381536/railgunglm/data/mln0rw5f0wtuqc3rf9l9.webp'> <br> He wants to create a pivot table to find the number of books borrowed by each student. <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381536/railgunglm/data/c80xth6uyo9okeuyi6h9.webp'> <br> In which of the following areas should 'Student ID' be put?",
     "correct_answer": "ROWS ans VALUES",
     "incorrect_answers": [
       "FILTERS",
@@ -2301,12 +2301,12 @@
   },
   {
     "topic": "Spreadsheet",
-    "question": "In the following spreadsheet, a formula is entered in <code>B6</code> based on <code>B2:B4</code> to calculate the class fee. Classmates want to limit the class fee to $1,000 by cutting the budget for the study tour. <br> <img src='/data/202210.webp'> <br> When using the 'goal seek' function for 'what-if' analysis, which of the following sets of data should be used?",
-    "correct_answer": "<img src='/data/202210_1.webp'>",
+    "question": "In the following spreadsheet, a formula is entered in <code>B6</code> based on <code>B2:B4</code> to calculate the class fee. Classmates want to limit the class fee to $1,000 by cutting the budget for the study tour. <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381537/railgunglm/data/ufwb9gvaqh7vap7qg1op.webp'> <br> When using the 'goal seek' function for 'what-if' analysis, which of the following sets of data should be used?",
+    "correct_answer": "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381537/railgunglm/data/tze8mxbmzq5suhsnpbc1.webp'>",
     "incorrect_answers": [
-      "<img src='/data/202210_2.webp'>",
-      "<img src='/data/202210_3.webp'>",
-      "<img src='/data/202210_4.webp'>"
+      "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381538/railgunglm/data/umnm8q3vvo11gecvttjj.webp'>",
+      "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381538/railgunglm/data/cp4idrtjveuuxhsxq4zy.webp'>",
+      "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381538/railgunglm/data/vw8lo1qpbry0kdhqk2nf.webp'>"
     ]
   },
   {
@@ -2371,7 +2371,7 @@
   },
   {
     "topic": "Computer Software",
-    "question": "In a typical situation, what are P, Q and R? <br> <img src='/data/202221.webp'>",
+    "question": "In a typical situation, what are P, Q and R? <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381539/railgunglm/data/hqhqivzzjiich2ike6zb.webp'>",
     "correct_answer": "P: Application software, Q: Operating system, R: Hardware",
     "incorrect_answers": [
       "P: Operating system, Q: Hardware, R: Application software",
@@ -2554,8 +2554,8 @@
     "question": "Which of the following is NOT a specification of a projector?",
     "correct_answer": "5000 rpm (revolutions per minute)",
     "incorrect_answers": [
-      "8K UHD (Ultra High Definition) <img src='/data/8k.webp'>",
-      "4K UHD (Ultra High Definition) <img src='/data/4k.webp'>",
+      "8K UHD (Ultra High Definition) <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381541/railgunglm/data/wu7splvfk85znehyyyu3.webp'>",
+      "4K UHD (Ultra High Definition) <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381541/railgunglm/data/sglahnyynzsvfplurlw7.webp'>",
       "3000 lm (lumen)",
       "WiFi 802.11ac supported"
     ]
@@ -2582,7 +2582,7 @@
   },
   {
     "topic": "The Networking and Internet Basics",
-    "question": "In the following diagram, a computer is connected to the Internet. What is X? <br> <img src='/data/202323.webp'>",
+    "question": "In the following diagram, a computer is connected to the Internet. What is X? <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381539/railgunglm/data/xfdfj65hf15iyi7uafwm.webp'>",
     "correct_answer": "Modem",
     "incorrect_answers": [
       "Switch",
@@ -2722,7 +2722,7 @@
   },
   {
     "topic": "Spreadsheet",
-    "question": "<img src='/data/202411.webp'> <br> What is the results of the following formula? <br> <code>=RANK(B1,B1:B5,0) + RANK(B2,B1:B5,1)</code>",
+    "question": "<img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381540/railgunglm/data/uhrrlc2rbkpwd9bolrl0.webp'> <br> What is the results of the following formula? <br> <code>=RANK(B1,B1:B5,0) + RANK(B2,B1:B5,1)</code>",
     "correct_answer": "7",
     "incorrect_answers": [
       "4",
@@ -2782,7 +2782,7 @@
   },
   {
     "topic": "Data Organization and Data Control",
-    "question": "What is the purpose of the task displayed on the login screen of an online store? <br> <img src='/data/202435.webp'>",
+    "question": "What is the purpose of the task displayed on the login screen of an online store? <br> <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381540/railgunglm/data/qijnbmny06mkj63zms4n.webp'>",
     "correct_answer": "To confirm that the login is performed by a human",
     "incorrect_answers": [
       "To ensure that the login device is equipped with a touchscreen",
@@ -2802,7 +2802,7 @@
   },
   {
     "topic": "Health and Ethical Issues",
-    "question": "What ergonomic improvements need to be made when using the following computer?",
+    "question": "What ergonomic improvements need to be made when using the following computer? <img src='https://res.cloudinary.com/dxhkoqh3v/image/upload/v1734381540/railgunglm/data/a0pzdug8iisttq635lxz.webp'>",
     "correct_answer": "Install armrests on the chair",
     "incorrect_answers": [
       "Install a trackball",
